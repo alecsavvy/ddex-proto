@@ -1,7 +1,7 @@
 version: v2
 modules:
   - path: proto
-    name: buf.build/openaudio/ddex
+    name: buf.build/sonata/ddex
 lint:
   use:
     - STANDARD

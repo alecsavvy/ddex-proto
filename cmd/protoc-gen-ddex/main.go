@@ -18,7 +18,7 @@
 //
 // Installation:
 //
-//	go install github.com/OpenAudio/ddex-proto/cmd/protoc-gen-ddex@latest
+//	go install github.com/sonata-labs/ddex-proto/cmd/protoc-gen-ddex@latest
 //
 // Future features:
 // - DDEX validation rules (e.g., reference resolution in ERN messages)
@@ -31,8 +31,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/OpenAudio/ddex-proto/pkg/ddexgen"
-	"github.com/OpenAudio/ddex-proto/pkg/injecttag"
+	"github.com/sonata-labs/ddex-proto/pkg/ddexgen"
+	"github.com/sonata-labs/ddex-proto/pkg/injecttag"
 )
 
 const version = "0.1.0"

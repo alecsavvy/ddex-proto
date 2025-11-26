@@ -45803,8 +45803,7 @@ const file_ddex_avs_v20200518_v20200518_proto_rawDesc = "" +
 	")WORK_RELATIONSHIP_TYPE_MELODYBORROWEDFROM\x10\x03\x12(\n" +
 	"$WORK_RELATIONSHIP_TYPE_REIMAGININGOF\x10\x04\x12$\n" +
 	" WORK_RELATIONSHIP_TYPE_TAKENFROM\x10\x05\x12&\n" +
-	"\"WORK_RELATIONSHIP_TYPE_USERDEFINED\x10\x06B\xd7\x01\n" +
-	"\x16com.ddex.avs.v20200518B\x0eV20200518ProtoP\x01ZCgithub.com/OpenAudio/ddex-proto/gen/ddex/avs/v20200518;avsv20200518\xa2\x02\x03DAX\xaa\x02\x12Ddex.Avs.V20200518\xca\x02\x12Ddex\\Avs\\V20200518\xe2\x02\x1eDdex\\Avs\\V20200518\\GPBMetadata\xea\x02\x14Ddex::Avs::V20200518b\x06proto3"
+	"\"WORK_RELATIONSHIP_TYPE_USERDEFINED\x10\x06BGZEgithub.com/sonata-labs/ddex-proto/gen/ddex/avs/v20200518;avsv20200518b\x06proto3"
 
 var (
 	file_ddex_avs_v20200518_v20200518_proto_rawDescOnce sync.Once

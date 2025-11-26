@@ -1,6 +1,7 @@
 package ddexgen
 
 import (
+	"bufio"
 	"fmt"
 	"go/ast"
 	"go/parser"
@@ -11,9 +12,53 @@ import (
 	"strings"
 )
 
+// extractModulePath reads the module path from go.mod in the repository root
+func extractModulePath(targetDir string) (string, error) {
+	// Find go.mod by walking up from targetDir
+	dir := targetDir
+	for {
+		goModPath := filepath.Join(dir, "go.mod")
+		if _, err := os.Stat(goModPath); err == nil {
+			file, err := os.Open(goModPath)
+			if err != nil {
+				return "", err
+			}
+			defer file.Close()
+
+			scanner := bufio.NewScanner(file)
+			if scanner.Scan() {
+				line := scanner.Text()
+				if strings.HasPrefix(line, "module ") {
+					return strings.TrimSpace(strings.TrimPrefix(line, "module ")), nil
+				}
+			}
+			return "", fmt.Errorf("module declaration not found in go.mod")
+		}
+
+		parent := filepath.Dir(dir)
+		if parent == dir {
+			break // Reached root
+		}
+		dir = parent
+	}
+	return "", fmt.Errorf("go.mod not found")
+}
+
 // generateExtensions generates enum_strings.go, *.xml.go, and optionally registry.go files
-// If goPackagePrefix is provided, registry.go will be generated with that import prefix
+// If goPackagePrefix is provided, it's used; otherwise, the module path is extracted from go.mod
 func Generate(targetDir string, verbose bool, goPackagePrefix string) error {
+	// If goPackagePrefix is not provided, try to extract it from go.mod
+	if goPackagePrefix == "" {
+		modulePath, err := extractModulePath(targetDir)
+		if err == nil {
+			goPackagePrefix = filepath.Join(modulePath, "gen")
+			if verbose {
+				log.Printf("Extracted module path: %s, using prefix: %s", modulePath, goPackagePrefix)
+			}
+		} else if verbose {
+			log.Printf("Warning: Could not extract module path: %v. Registry.go will not be generated.", err)
+		}
+	}
 	var allPackages []PackageInfo
 
 	// Find all generated protobuf packages
@@ -66,7 +111,7 @@ func Generate(targetDir string, verbose bool, goPackagePrefix string) error {
 			}
 
 			// Collect package info for registry generation (only DDEX packages with messages)
-			if goPackagePrefix != "" && len(messages) > 0 && strings.Contains(packageDir, "ddex") {
+			if len(messages) > 0 && strings.Contains(packageDir, "ddex") {
 				nsInfo := deriveNamespaceInfo(packageDir)
 				if nsInfo != nil {
 					// Construct import path from prefix + relative path
@@ -74,7 +119,9 @@ func Generate(targetDir string, verbose bool, goPackagePrefix string) error {
 					if err != nil {
 						return fmt.Errorf("failed to get relative path: %w", err)
 					}
-					importPath := filepath.Join(goPackagePrefix, relPath)
+					// Convert OS path separators to forward slashes for Go import paths
+					relPath = filepath.ToSlash(relPath)
+					importPath := goPackagePrefix + "/" + relPath
 
 					allPackages = append(allPackages, PackageInfo{
 						Dir:         packageDir,

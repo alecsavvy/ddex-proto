@@ -24489,8 +24489,7 @@ const file_ddex_avs_v20161006_v20161006_proto_rawDesc = "" +
 	"\x11ReferenceCreation\x12\"\n" +
 	"\x1eREFERENCE_CREATION_UNSPECIFIED\x10\x00\x12(\n" +
 	"$REFERENCE_CREATION_REFERENCERESOURCE\x10\x01\x12'\n" +
-	"#REFERENCE_CREATION_CONSUMERRESOURCE\x10\x02B\xd7\x01\n" +
-	"\x16com.ddex.avs.v20161006B\x0eV20161006ProtoP\x01ZCgithub.com/OpenAudio/ddex-proto/gen/ddex/avs/v20161006;avsv20161006\xa2\x02\x03DAX\xaa\x02\x12Ddex.Avs.V20161006\xca\x02\x12Ddex\\Avs\\V20161006\xe2\x02\x1eDdex\\Avs\\V20161006\\GPBMetadata\xea\x02\x14Ddex::Avs::V20161006b\x06proto3"
+	"#REFERENCE_CREATION_CONSUMERRESOURCE\x10\x02BGZEgithub.com/sonata-labs/ddex-proto/gen/ddex/avs/v20161006;avsv20161006b\x06proto3"
 
 var (
 	file_ddex_avs_v20161006_v20161006_proto_rawDescOnce sync.Once

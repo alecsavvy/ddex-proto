@@ -3,7 +3,7 @@ package testutil
 import (
 	"testing"
 
-	"github.com/OpenAudio/ddex-proto/testdata"
+	"github.com/sonata-labs/ddex-proto/testdata"
 )
 
 // RunPerformanceTests runs performance benchmarks for parsing by dynamically scanning for test files

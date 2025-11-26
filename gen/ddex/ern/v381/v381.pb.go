@@ -7,7 +7,7 @@
 package ernv381
 
 import (
-	_ "github.com/OpenAudio/ddex-proto/gen/ddex/avs/v20161006"
+	_ "github.com/sonata-labs/ddex-proto/gen/ddex/avs/v20161006"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -21191,8 +21191,7 @@ const file_ddex_ern_v381_v381_proto_rawDesc = "" +
 	"\x18language_and_script_code\x18\x02 \x01(\tR\x15languageAndScriptCode*|\n" +
 	"\x19DdexCCurrentTerritoryCode\x12-\n" +
 	")DDEX_C_CURRENT_TERRITORY_CODE_UNSPECIFIED\x10\x00\x120\n" +
-	",DDEX_C_CURRENT_TERRITORY_CODE_IDENTIFIERTYPE\x10\x01B\xaf\x01\n" +
-	"\x11com.ddex.ern.v381B\tV381ProtoP\x01Z9github.com/OpenAudio/ddex-proto/gen/ddex/ern/v381;ernv381\xa2\x02\x03DEX\xaa\x02\rDdex.Ern.V381\xca\x02\rDdex\\Ern\\V381\xe2\x02\x19Ddex\\Ern\\V381\\GPBMetadata\xea\x02\x0fDdex::Ern::V381b\x06proto3"
+	",DDEX_C_CURRENT_TERRITORY_CODE_IDENTIFIERTYPE\x10\x01B=Z;github.com/sonata-labs/ddex-proto/gen/ddex/ern/v381;ernv381b\x06proto3"
 
 var (
 	file_ddex_ern_v381_v381_proto_rawDescOnce sync.Once

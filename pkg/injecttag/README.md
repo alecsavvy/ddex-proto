@@ -11,7 +11,7 @@ This package provides programmatic access to struct tag injection. It reads spec
 ## Usage
 
 ```go
-import "github.com/OpenAudio/ddex-proto/pkg/injecttag"
+import "github.com/sonata-labs/ddex-proto/pkg/injecttag"
 
 func main() {
     // Read the generated .pb.go file

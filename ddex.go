@@ -6,11 +6,11 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/OpenAudio/ddex-proto/gen/ddex/ern/v383"
-	"github.com/OpenAudio/ddex-proto/gen/ddex/ern/v43"
-	"github.com/OpenAudio/ddex-proto/gen/ddex/ern/v432"
-	"github.com/OpenAudio/ddex-proto/gen/ddex/mead/v11"
-	"github.com/OpenAudio/ddex-proto/gen/ddex/pie/v10"
+	"github.com/sonata-labs/ddex-proto/gen/ddex/ern/v383"
+	"github.com/sonata-labs/ddex-proto/gen/ddex/ern/v43"
+	"github.com/sonata-labs/ddex-proto/gen/ddex/ern/v432"
+	"github.com/sonata-labs/ddex-proto/gen/ddex/mead/v11"
+	"github.com/sonata-labs/ddex-proto/gen/ddex/pie/v10"
 )
 
 // Versioned type aliases for discoverability of pure XML types

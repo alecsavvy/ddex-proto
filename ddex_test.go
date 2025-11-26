@@ -4,9 +4,9 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/OpenAudio/ddex-proto/gen"
-	"github.com/OpenAudio/ddex-proto/testdata"
-	"github.com/OpenAudio/ddex-proto/testutil"
+	"github.com/sonata-labs/ddex-proto/gen"
+	"github.com/sonata-labs/ddex-proto/testdata"
+	"github.com/sonata-labs/ddex-proto/testutil"
 	"github.com/stretchr/testify/require"
 )
 

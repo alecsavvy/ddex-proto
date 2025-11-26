@@ -8,10 +8,10 @@ import (
 	"os"
 	"path/filepath"
 
-	ernv432 "github.com/OpenAudio/ddex-proto/gen/ddex/ern/v432"
-	meadv11 "github.com/OpenAudio/ddex-proto/gen/ddex/mead/v11"
-	piev10 "github.com/OpenAudio/ddex-proto/gen/ddex/pie/v10"
 	"github.com/davecgh/go-spew/spew"
+	ernv432 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v432"
+	meadv11 "github.com/sonata-labs/ddex-proto/gen/ddex/mead/v11"
+	piev10 "github.com/sonata-labs/ddex-proto/gen/ddex/pie/v10"
 )
 
 func main() {

@@ -4,7 +4,7 @@ import (
 	"embed"
 	"testing"
 
-	"github.com/OpenAudio/ddex-proto/testdata"
+	"github.com/sonata-labs/ddex-proto/testdata"
 )
 
 // UnmarshalerFunc represents a function that can unmarshal XML data to a message

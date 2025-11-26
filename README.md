@@ -1,9 +1,9 @@
 # DDEX Proto
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/OpenAudio/ddex-proto.svg)](https://pkg.go.dev/github.com/OpenAudio/ddex-proto)
-[![Go Report Card](https://goreportcard.com/badge/github.com/OpenAudio/ddex-proto?style=flat&v=1)](https://goreportcard.com/report/github.com/OpenAudio/ddex-proto?style=flat&v=1)
+[![Go Reference](https://pkg.go.dev/badge/github.com/sonata-labs/ddex-proto.svg)](https://pkg.go.dev/github.com/sonata-labs/ddex-proto)
+[![Go Report Card](https://goreportcard.com/badge/github.com/sonata-labs/ddex-proto?style=flat&v=1)](https://goreportcard.com/report/github.com/sonata-labs/ddex-proto?style=flat&v=1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![CI](https://github.com/OpenAudio/ddex-proto/workflows/CI/badge.svg)](https://github.com/OpenAudio/ddex-proto/actions)
+[![CI](https://github.com/sonata-labs/ddex-proto/workflows/CI/badge.svg)](https://github.com/sonata-labs/ddex-proto/actions)
 
 A comprehensive implementation of DDEX (Digital Data Exchange) standards with native XML support and Protocol Buffer/JSON serialization using Go.
 
@@ -35,7 +35,7 @@ This library provides Go structs with Protocol Buffer, JSON, and XML serializati
 ## Installation
 
 ```bash
-go get github.com/OpenAudio/ddex-proto@latest
+go get github.com/sonata-labs/ddex-proto@latest
 ```
 
 ## Buf Schema Registry
@@ -43,7 +43,7 @@ go get github.com/OpenAudio/ddex-proto@latest
 The Protocol Buffer schemas for this project are available on the Buf Schema Registry:
 
 ```
-buf.build/openaudio/ddex
+buf.build/sonata/ddex
 ```
 
 ### Using Buf Schemas
@@ -54,7 +54,7 @@ To use these schemas in your own project with Buf:
 # buf.yaml
 version: v2
 deps:
-  - buf.build/openaudio/ddex
+  - buf.build/sonata/ddex
 breaking:
   use:
     - FILE
@@ -97,8 +97,8 @@ import (
     "fmt"
     "os"
 
-    "github.com/OpenAudio/ddex-proto"
-    ernv432 "github.com/OpenAudio/ddex-proto/gen/ddex/ern/v432"
+    "github.com/sonata-labs/ddex-proto"
+    ernv432 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v432"
 )
 
 func main() {
@@ -143,7 +143,7 @@ import (
     "encoding/json"
     "encoding/xml"
     "fmt"
-    ernv432 "github.com/OpenAudio/ddex-proto/gen/ddex/ern/v432"
+    ernv432 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v432"
     "google.golang.org/protobuf/proto"
 )
 
@@ -318,38 +318,28 @@ To regenerate the same Go code with full XML support from the Buf Schema Registr
 
 ```bash
 # Install the post-processor
-go install github.com/OpenAudio/ddex-proto/cmd/protoc-gen-ddex@latest
+go install github.com/sonata-labs/ddex-proto/cmd/protoc-gen-ddex@latest
 
-# In your buf.gen.yaml, set the go_package_prefix for ddex module:
-# managed:
-#   enabled: true
-#   override:
-#     - file_option: go_package_prefix
-#       module: buf.build/openaudio/ddex
-#       value: github.com/OpenAudio/ddex-proto/gen
+# The proto files already have full go_package paths, so no override is needed
 
-# Generate .pb.go files from buf.build/openaudio/ddex
+# Generate .pb.go files from buf.build/sonata/ddex
 buf generate
 
 # Post-process to add XML support
 protoc-gen-ddex
-
-# Optional: Generate registry.go with custom import path
-protoc-gen-ddex --go-package-prefix github.com/your-org/your-repo/gen
 ```
 
 The `protoc-gen-ddex` tool performs these operations:
 1. Injects XML struct tags for DDEX XML compatibility
 2. Generates enum string conversion methods (`enum_strings.go`)
 3. Generates XML marshaling methods with namespace handling (`*.xml.go`)
-4. Optionally generates message type registry (`registry.go`) when `--go-package-prefix` is provided
+4. Generates message type registry (`registry.go`)
 
 **Options:**
 - `--dir <path>`: Target directory containing .pb.go files (default: `./gen`)
-- `--go-package-prefix <prefix>`: Go package prefix for import paths (generates `registry.go`)
 - `--verbose`: Enable verbose logging
 
-**Note:** The proto files use relative `go_package` paths (e.g., `ddex/ern/v432;ernv432`). Set the `go_package_prefix` override in your `buf.gen.yaml` to specify your full import path.
+**Note:** The proto files use full `go_package` paths (e.g., `github.com/sonata-labs/ddex-proto/gen/ddex/ern/v432;ernv432`).
 
 #### Full Generation Pipeline (For Maintainers)
 

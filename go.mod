@@ -1,4 +1,4 @@
-module github.com/OpenAudio/ddex-proto
+module github.com/sonata-labs/ddex-proto
 
 go 1.25.0
 

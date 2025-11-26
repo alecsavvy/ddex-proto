@@ -13,7 +13,7 @@ Generates DDEX-specific Go code extensions for `.pb.go` files:
 ## Installation
 
 ```bash
-go install github.com/OpenAudio/ddex-proto/cmd/ddex-gen@latest
+go install github.com/sonata-labs/ddex-proto/cmd/ddex-gen@latest
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ ddex-gen
 ## As a Library
 
 ```go
-import "github.com/OpenAudio/ddex-proto/pkg/ddexgen"
+import "github.com/sonata-labs/ddex-proto/pkg/ddexgen"
 
 err := ddexgen.Generate("./gen", true) // dir, verbose
 if err != nil {
