@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/sonata-labs/ddex-proto/pkg/injecttag"
+	"github.com/alecsavvy/ddex-proto/pkg/injecttag"
 )
 
 func main() {

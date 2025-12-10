@@ -7,7 +7,7 @@
 package ernv383
 
 import (
-	_ "github.com/sonata-labs/ddex-proto/gen/ddex/avs/v20200108"
+	_ "github.com/alecsavvy/ddex-proto/gen/ddex/avs/v20200108"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -21201,7 +21201,7 @@ const file_ddex_ern_v383_v383_proto_rawDesc = "" +
 	"\x18language_and_script_code\x18\x02 \x01(\tR\x15languageAndScriptCode*|\n" +
 	"\x19DdexCCurrentTerritoryCode\x12-\n" +
 	")DDEX_C_CURRENT_TERRITORY_CODE_UNSPECIFIED\x10\x00\x120\n" +
-	",DDEX_C_CURRENT_TERRITORY_CODE_IDENTIFIERTYPE\x10\x01B=Z;github.com/sonata-labs/ddex-proto/gen/ddex/ern/v383;ernv383b\x06proto3"
+	",DDEX_C_CURRENT_TERRITORY_CODE_IDENTIFIERTYPE\x10\x01B;Z9github.com/alecsavvy/ddex-proto/gen/ddex/ern/v383;ernv383b\x06proto3"
 
 var (
 	file_ddex_ern_v383_v383_proto_rawDescOnce sync.Once

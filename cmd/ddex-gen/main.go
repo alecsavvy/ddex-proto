@@ -13,7 +13,7 @@
 //
 // Installation:
 //
-//	go install github.com/sonata-labs/ddex-proto/cmd/ddex-gen@latest
+//	go install github.com/alecsavvy/ddex-proto/cmd/ddex-gen@latest
 package main
 
 import (
@@ -22,7 +22,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/sonata-labs/ddex-proto/pkg/ddexgen"
+	"github.com/alecsavvy/ddex-proto/pkg/ddexgen"
 )
 
 const version = "0.1.0"

@@ -9,13 +9,13 @@ import (
 	"strings"
 
 	// Auto-generated imports for all DDEX message types
-	ernv381 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v381"
-	ernv383 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v383"
-	ernv42 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v42"
-	ernv43 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v43"
-	ernv432 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v432"
-	meadv11 "github.com/sonata-labs/ddex-proto/gen/ddex/mead/v11"
-	piev10 "github.com/sonata-labs/ddex-proto/gen/ddex/pie/v10"
+	ernv381 "github.com/alecsavvy/ddex-proto/gen/ddex/ern/v381"
+	ernv383 "github.com/alecsavvy/ddex-proto/gen/ddex/ern/v383"
+	ernv42 "github.com/alecsavvy/ddex-proto/gen/ddex/ern/v42"
+	ernv43 "github.com/alecsavvy/ddex-proto/gen/ddex/ern/v43"
+	ernv432 "github.com/alecsavvy/ddex-proto/gen/ddex/ern/v432"
+	meadv11 "github.com/alecsavvy/ddex-proto/gen/ddex/mead/v11"
+	piev10 "github.com/alecsavvy/ddex-proto/gen/ddex/pie/v10"
 )
 
 // MessageTypeInfo holds information about a registered DDEX message type

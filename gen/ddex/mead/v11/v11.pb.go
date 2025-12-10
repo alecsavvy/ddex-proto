@@ -7,7 +7,7 @@
 package meadv11
 
 import (
-	_ "github.com/sonata-labs/ddex-proto/gen/ddex/avs/vlatest"
+	_ "github.com/alecsavvy/ddex-proto/gen/ddex/avs/vlatest"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -12830,7 +12830,7 @@ const file_ddex_mead_v11_v11_proto_rawDesc = "" +
 	"\x06Timing\x12\x1f\n" +
 	"\vstart_point\x18\x01 \x01(\tR\n" +
 	"startPoint\x12#\n" +
-	"\rduration_used\x18\x02 \x01(\tR\fdurationUsedB=Z;github.com/sonata-labs/ddex-proto/gen/ddex/mead/v11;meadv11b\x06proto3"
+	"\rduration_used\x18\x02 \x01(\tR\fdurationUsedB;Z9github.com/alecsavvy/ddex-proto/gen/ddex/mead/v11;meadv11b\x06proto3"
 
 var (
 	file_ddex_mead_v11_v11_proto_rawDescOnce sync.Once

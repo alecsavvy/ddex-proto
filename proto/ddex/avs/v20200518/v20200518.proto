@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ddex.avs.v20200518;
 
-option go_package = "github.com/sonata-labs/ddex-proto/gen/ddex/avs/v20200518;avsv20200518";
+option go_package = "github.com/alecsavvy/ddex-proto/gen/ddex/avs/v20200518;avsv20200518";
 
 // Target namespace: http://ddex.net/xml/avs/avs
 

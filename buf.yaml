@@ -1,7 +1,7 @@
 version: v2
 modules:
   - path: proto
-    name: buf.build/sonata/ddex
+    name: buf.build/mojave/ddex
 lint:
   use:
     - STANDARD

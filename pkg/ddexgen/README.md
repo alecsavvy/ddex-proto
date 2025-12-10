@@ -15,7 +15,7 @@ This package provides programmatic access to DDEX-specific code generation. It's
 ## Usage
 
 ```go
-import "github.com/sonata-labs/ddex-proto/pkg/ddexgen"
+import "github.com/alecsavvy/ddex-proto/pkg/ddexgen"
 
 func main() {
     // Generate DDEX extensions for all .pb.go files in ./gen

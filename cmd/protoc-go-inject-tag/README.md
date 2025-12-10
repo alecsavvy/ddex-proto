@@ -2,7 +2,7 @@
 
 Inject custom struct tags into protobuf-generated Go files.
 
-Forked from [github.com/favadi/protoc-go-inject-tag](https://github.com/favadi/protoc-go-inject-tag) (MIT License) and maintained as part of the [ddex-proto](https://github.com/sonata-labs/ddex-proto) project.
+Forked from [github.com/favadi/protoc-go-inject-tag](https://github.com/favadi/protoc-go-inject-tag) (MIT License) and maintained as part of the [ddex-proto](https://github.com/alecsavvy/ddex-proto) project.
 
 ## What It Does
 
@@ -32,7 +32,7 @@ type Release struct {
 ## Installation
 
 ```bash
-go install github.com/sonata-labs/ddex-proto/cmd/protoc-go-inject-tag@latest
+go install github.com/alecsavvy/ddex-proto/cmd/protoc-go-inject-tag@latest
 ```
 
 ## Usage
@@ -53,7 +53,7 @@ protoc-go-inject-tag -input="*.pb.go" -verbose
 ### As a Library
 
 ```go
-import "github.com/sonata-labs/ddex-proto/pkg/injecttag"
+import "github.com/alecsavvy/ddex-proto/pkg/injecttag"
 
 // Parse file and find injection points
 src, _ := os.ReadFile("file.pb.go")

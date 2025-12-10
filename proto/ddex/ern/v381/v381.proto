@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package ddex.ern.v381;
 
+option go_package = "github.com/alecsavvy/ddex-proto/gen/ddex/ern/v381;ernv381";
+
 // Target namespace: http://ddex.net/xml/ern/381
 
 import "ddex/avs/v20161006/v20161006.proto";
-
-option go_package = "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v381;ernv381";
 
 message NewReleaseMessage {
   // @gotags: xml:"MessageHeader"

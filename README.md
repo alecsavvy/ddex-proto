@@ -1,9 +1,9 @@
 # DDEX Proto
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/sonata-labs/ddex-proto.svg)](https://pkg.go.dev/github.com/sonata-labs/ddex-proto)
-[![Go Report Card](https://goreportcard.com/badge/github.com/sonata-labs/ddex-proto?style=flat&v=1)](https://goreportcard.com/report/github.com/sonata-labs/ddex-proto?style=flat&v=1)
+[![Go Reference](https://pkg.go.dev/badge/github.com/alecsavvy/ddex-proto.svg)](https://pkg.go.dev/github.com/alecsavvy/ddex-proto)
+[![Go Report Card](https://goreportcard.com/badge/github.com/alecsavvy/ddex-proto?style=flat&v=1)](https://goreportcard.com/report/github.com/alecsavvy/ddex-proto?style=flat&v=1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![CI](https://github.com/sonata-labs/ddex-proto/workflows/CI/badge.svg)](https://github.com/sonata-labs/ddex-proto/actions)
+[![CI](https://github.com/alecsavvy/ddex-proto/workflows/CI/badge.svg)](https://github.com/alecsavvy/ddex-proto/actions)
 
 A comprehensive implementation of DDEX (Digital Data Exchange) standards with native XML support and Protocol Buffer/JSON serialization using Go.
 
@@ -35,7 +35,7 @@ This library provides Go structs with Protocol Buffer, JSON, and XML serializati
 ## Installation
 
 ```bash
-go get github.com/sonata-labs/ddex-proto@latest
+go get github.com/alecsavvy/ddex-proto@latest
 ```
 
 ## Buf Schema Registry
@@ -43,7 +43,7 @@ go get github.com/sonata-labs/ddex-proto@latest
 The Protocol Buffer schemas for this project are available on the Buf Schema Registry:
 
 ```
-buf.build/sonata/ddex
+buf.build/alecsavvy/ddex
 ```
 
 ### Using Buf Schemas
@@ -54,7 +54,7 @@ To use these schemas in your own project with Buf:
 # buf.yaml
 version: v2
 deps:
-  - buf.build/sonata/ddex
+  - buf.build/alecsavvy/ddex
 breaking:
   use:
     - FILE
@@ -97,8 +97,8 @@ import (
     "fmt"
     "os"
 
-    "github.com/sonata-labs/ddex-proto"
-    ernv432 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v432"
+    "github.com/alecsavvy/ddex-proto"
+    ernv432 "github.com/alecsavvy/ddex-proto/gen/ddex/ern/v432"
 )
 
 func main() {
@@ -143,7 +143,7 @@ import (
     "encoding/json"
     "encoding/xml"
     "fmt"
-    ernv432 "github.com/sonata-labs/ddex-proto/gen/ddex/ern/v432"
+    ernv432 "github.com/alecsavvy/ddex-proto/gen/ddex/ern/v432"
     "google.golang.org/protobuf/proto"
 )
 
@@ -318,11 +318,11 @@ To regenerate the same Go code with full XML support from the Buf Schema Registr
 
 ```bash
 # Install the post-processor
-go install github.com/sonata-labs/ddex-proto/cmd/protoc-gen-ddex@latest
+go install github.com/alecsavvy/ddex-proto/cmd/protoc-gen-ddex@latest
 
 # The proto files already have full go_package paths, so no override is needed
 
-# Generate .pb.go files from buf.build/sonata/ddex
+# Generate .pb.go files from buf.build/alecsavvy/ddex
 buf generate
 
 # Post-process to add XML support
@@ -339,7 +339,7 @@ The `protoc-gen-ddex` tool performs these operations:
 - `--dir <path>`: Target directory containing .pb.go files (default: `./gen`)
 - `--verbose`: Enable verbose logging
 
-**Note:** The proto files use full `go_package` paths (e.g., `github.com/sonata-labs/ddex-proto/gen/ddex/ern/v432;ernv432`).
+**Note:** The proto files use full `go_package` paths (e.g., `github.com/alecsavvy/ddex-proto/gen/ddex/ern/v432;ernv432`).
 
 #### Full Generation Pipeline (For Maintainers)
 

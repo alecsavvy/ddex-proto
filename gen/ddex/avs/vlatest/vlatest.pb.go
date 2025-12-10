@@ -58751,7 +58751,7 @@ const file_ddex_avs_vlatest_vlatest_proto_rawDesc = "" +
 	"\bWorkType\x12\x19\n" +
 	"\x15WORK_TYPE_UNSPECIFIED\x10\x00\x12\x1b\n" +
 	"\x17WORK_TYPE_GRAPHICALWORK\x10\x01\x12\x1a\n" +
-	"\x16WORK_TYPE_LITERARYWORK\x10\x02BCZAgithub.com/sonata-labs/ddex-proto/gen/ddex/avs/vlatest;avsvlatestb\x06proto3"
+	"\x16WORK_TYPE_LITERARYWORK\x10\x02BAZ?github.com/alecsavvy/ddex-proto/gen/ddex/avs/vlatest;avsvlatestb\x06proto3"
 
 var (
 	file_ddex_avs_vlatest_vlatest_proto_rawDescOnce sync.Once

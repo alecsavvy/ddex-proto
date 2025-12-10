@@ -24489,7 +24489,7 @@ const file_ddex_avs_v20161006_v20161006_proto_rawDesc = "" +
 	"\x11ReferenceCreation\x12\"\n" +
 	"\x1eREFERENCE_CREATION_UNSPECIFIED\x10\x00\x12(\n" +
 	"$REFERENCE_CREATION_REFERENCERESOURCE\x10\x01\x12'\n" +
-	"#REFERENCE_CREATION_CONSUMERRESOURCE\x10\x02BGZEgithub.com/sonata-labs/ddex-proto/gen/ddex/avs/v20161006;avsv20161006b\x06proto3"
+	"#REFERENCE_CREATION_CONSUMERRESOURCE\x10\x02BEZCgithub.com/alecsavvy/ddex-proto/gen/ddex/avs/v20161006;avsv20161006b\x06proto3"
 
 var (
 	file_ddex_avs_v20161006_v20161006_proto_rawDescOnce sync.Once

@@ -1,4 +1,4 @@
-module github.com/sonata-labs/ddex-proto
+module github.com/alecsavvy/ddex-proto
 
 go 1.25.0
 

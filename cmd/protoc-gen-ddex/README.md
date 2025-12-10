@@ -14,7 +14,7 @@ Combines XML tag injection + DDEX code generation in a single command.
 ## Installation
 
 ```bash
-go install github.com/sonata-labs/ddex-proto/cmd/protoc-gen-ddex@latest
+go install github.com/alecsavvy/ddex-proto/cmd/protoc-gen-ddex@latest
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ protoc-gen-ddex -version
 ## Complete Workflow
 
 ```bash
-# 1. Generate .proto files from buf.build/sonata/ddex
+# 1. Generate .proto files from buf.build/alecsavvy/ddex
 buf generate
 
 # 2. Post-process (adds XML support)
@@ -70,14 +70,14 @@ If you need finer control, use the individual tools:
 
 ## For External Users
 
-If you're generating code from `buf.build/sonata/ddex` in your own repository:
+If you're generating code from `buf.build/alecsavvy/ddex` in your own repository:
 
 ```bash
 # In your project
 buf generate  # Downloads schemas from buf.build
 
 # Add XML support
-go install github.com/sonata-labs/ddex-proto/cmd/protoc-gen-ddex@latest
+go install github.com/alecsavvy/ddex-proto/cmd/protoc-gen-ddex@latest
 protoc-gen-ddex ./gen
 
 # Now you have the same XML capabilities as this library!

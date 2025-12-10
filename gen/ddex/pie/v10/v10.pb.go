@@ -7,7 +7,7 @@
 package piev10
 
 import (
-	_ "github.com/sonata-labs/ddex-proto/gen/ddex/avs/vlatest"
+	_ "github.com/alecsavvy/ddex-proto/gen/ddex/avs/vlatest"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -9544,7 +9544,7 @@ const file_ddex_pie_v10_v10_proto_rawDesc = "" +
 	"\x06writer\x18\x03 \x03(\v2..ddex.pie.v10.PartyDescriptorWithPronunciationR\x06writer\"Z\n" +
 	"\tWorkTitle\x12\x14\n" +
 	"\x05value\x18\x01 \x01(\tR\x05value\x127\n" +
-	"\x18language_and_script_code\x18\x02 \x01(\tR\x15languageAndScriptCodeB;Z9github.com/sonata-labs/ddex-proto/gen/ddex/pie/v10;piev10b\x06proto3"
+	"\x18language_and_script_code\x18\x02 \x01(\tR\x15languageAndScriptCodeB9Z7github.com/alecsavvy/ddex-proto/gen/ddex/pie/v10;piev10b\x06proto3"
 
 var (
 	file_ddex_pie_v10_v10_proto_rawDescOnce sync.Once

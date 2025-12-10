@@ -45803,7 +45803,7 @@ const file_ddex_avs_v20200518_v20200518_proto_rawDesc = "" +
 	")WORK_RELATIONSHIP_TYPE_MELODYBORROWEDFROM\x10\x03\x12(\n" +
 	"$WORK_RELATIONSHIP_TYPE_REIMAGININGOF\x10\x04\x12$\n" +
 	" WORK_RELATIONSHIP_TYPE_TAKENFROM\x10\x05\x12&\n" +
-	"\"WORK_RELATIONSHIP_TYPE_USERDEFINED\x10\x06BGZEgithub.com/sonata-labs/ddex-proto/gen/ddex/avs/v20200518;avsv20200518b\x06proto3"
+	"\"WORK_RELATIONSHIP_TYPE_USERDEFINED\x10\x06BEZCgithub.com/alecsavvy/ddex-proto/gen/ddex/avs/v20200518;avsv20200518b\x06proto3"
 
 var (
 	file_ddex_avs_v20200518_v20200518_proto_rawDescOnce sync.Once

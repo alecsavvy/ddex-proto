@@ -7,7 +7,7 @@
 package ernv43
 
 import (
-	_ "github.com/sonata-labs/ddex-proto/gen/ddex/avs/vlatest"
+	_ "github.com/alecsavvy/ddex-proto/gen/ddex/avs/vlatest"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -19630,7 +19630,7 @@ const file_ddex_ern_v43_v43_proto_rawDesc = "" +
 	"\x0eproprietary_id\x18\x05 \x03(\v2\x1b.ddex.ern.v43.ProprietaryIdR\rproprietaryId\x12\x15\n" +
 	"\ae_i_d_r\x18\x06 \x03(\tR\x04eIDR\x12\x1f\n" +
 	"\vis_replaced\x18\a \x01(\bR\n" +
-	"isReplacedB;Z9github.com/sonata-labs/ddex-proto/gen/ddex/ern/v43;ernv43b\x06proto3"
+	"isReplacedB9Z7github.com/alecsavvy/ddex-proto/gen/ddex/ern/v43;ernv43b\x06proto3"
 
 var (
 	file_ddex_ern_v43_v43_proto_rawDescOnce sync.Once

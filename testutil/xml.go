@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/alecsavvy/ddex-proto/testdata"
 	"github.com/beevik/etree"
-	"github.com/sonata-labs/ddex-proto/testdata"
 )
 
 // DOMComparison holds the comparison results between two XML documents

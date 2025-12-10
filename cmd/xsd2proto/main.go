@@ -1207,7 +1207,7 @@ func namespaceToGoPackage(ns string, bundle *NamespaceBundle, spec struct{ name,
 		alias = pkg
 	}
 
-	return "github.com/sonata-labs/ddex-proto/gen/" + path + ";" + alias
+	return "github.com/alecsavvy/ddex-proto/gen/" + path + ";" + alias
 }
 
 func packageToPath(pkg string) string {

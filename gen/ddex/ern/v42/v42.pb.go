@@ -7,7 +7,7 @@
 package ernv42
 
 import (
-	_ "github.com/sonata-labs/ddex-proto/gen/ddex/avs/vlatest"
+	_ "github.com/alecsavvy/ddex-proto/gen/ddex/avs/vlatest"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -18206,7 +18206,7 @@ const file_ddex_ern_v42_v42_proto_rawDesc = "" +
 	"\tVideoType\x12\x14\n" +
 	"\x05value\x18\x01 \x01(\tR\x05value\x12\x1c\n" +
 	"\tnamespace\x18\x02 \x01(\tR\tnamespace\x12,\n" +
-	"\x12user_defined_value\x18\x03 \x01(\tR\x10userDefinedValueB;Z9github.com/sonata-labs/ddex-proto/gen/ddex/ern/v42;ernv42b\x06proto3"
+	"\x12user_defined_value\x18\x03 \x01(\tR\x10userDefinedValueB9Z7github.com/alecsavvy/ddex-proto/gen/ddex/ern/v42;ernv42b\x06proto3"
 
 var (
 	file_ddex_ern_v42_v42_proto_rawDescOnce sync.Once

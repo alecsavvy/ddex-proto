@@ -3,7 +3,7 @@ package testutil
 import (
 	"testing"
 
-	"github.com/sonata-labs/ddex-proto/testdata"
+	"github.com/alecsavvy/ddex-proto/testdata"
 )
 
 // RunPerformanceTests runs performance benchmarks for parsing by dynamically scanning for test files
